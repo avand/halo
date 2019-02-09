@@ -10,6 +10,11 @@
     <link rel="shortcut icon" href="./favicon.png">
     <link rel="apple-touch-icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <style media="screen">
       body {
@@ -41,29 +46,79 @@
         max-width: 164px;
       }
 
-      h1, h2, h3, h4, h5, h6 {
-        font-weight: normal;
-        margin: .6em 0;
-        font-size: 2em;
-      }
+      h1 { margin: .6em 0; font-weight: normal; font-size: 2em; }
+      h2, h3, h4, h5, h6 { margin: 0; font-size: 1em; font-weight: 700; }
+
+      label { font-size: .75em; font-weight: 700 }
     </style>
   </head>
   <body>
     <div class="content">
       <img src="./halo.jpg" alt="Halo" width="164" height="164" class="avatar">
+
       <h1>
         How to Build a Halo
       </h1>
+
       <p>
         A children’s book being written by
         <a href="http://avandamiri.com/" target="_blank">Avand Amiri</a>
         and illustrated by
         <a href="http://naziragah.com/">Nazir Agah</a>.
       </p>
+
       <p>
         Follow our journey on
         <a href="https://instagram.com/buildahalo" class="button">Instagram</a>.
       </p>
+
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mailingListModal">
+        Join the mailing list
+      </button>
     </div>
+
+    <form action="https://buildahalo.us20.list-manage.com/subscribe/post?u=6b96938bbc82143eeb9cec283&amp;id=7fb8b5ecbf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="modal fade" id="mailingListModal" tabindex="-1" role="dialog" aria-labelledby="mailingListModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mailingListModalLabel">Join the mailing list</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Expect to hear from us about once each month.
+              </p>
+
+              <div id="mc_embed_signup">
+                <div id="mc_embed_signup_scroll">
+                  <div class="form-group">
+                    <label for="mce-EMAIL">Your email:</label>
+                    <input type="email" value="" name="EMAIL" class="form-control" required id="mce-EMAIL" />
+                  </div>
+
+                	<div id="mce-responses" class="clear">
+                		<div class="response" id="mce-error-response" style="display: none"></div>
+                		<div class="response" id="mce-success-response" style="display: none"></div>
+                	</div>
+
+                  <!-- Real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_6b96938bbc82143eeb9cec283_7fb8b5ecbf" tabindex="-1" value="">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </body>
 </html>
