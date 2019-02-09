@@ -26,7 +26,7 @@
       }
 
       @media (max-width: 600px) {
-        body { font-size: 14px; }
+        body { font-size: 16px; }
       }
 
       .content {
@@ -55,17 +55,43 @@
       h1 { margin: .6em 0; font-weight: normal; font-size: 2em; }
       h2, h3, h4, h5, h6 { margin: 0; font-size: 1em; font-weight: 700; }
 
-      label { font-size: .75em; font-weight: 700 }
+      label {
+        font-size: .8em;
+        font-weight: 700;
+        font-family: 'Hind', serif;
+        color: #b0b0b0;
+        text-transform: uppercase;
+        letter-spacing: 0.1;
+        margin-bottom: 0.25em;
+      }
 
       .btn {
-        font-size: .8em;
+        font-size: 1em;
         padding: .6em 1.6em .375em;
         border-radius: .6em;
         font-family: 'Hind', serif;
       }
 
+      .modal-header,
+      .modal-content,
+      .modal-footer {
+        padding: 1em 1.1em;
+      }
+      .modal-content {
+        border-radius: .8em;
+      }
+      .modal-header {
+        border-bottom: 0;
+      }
+      .modal-footer {
+        border-top: 0;
+      }
+      .form-control {
+        border-radius: .4em;
+      }
+
       #join-mailing-list-button {
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin-top: 1em;
       }
 
@@ -138,7 +164,7 @@
               <div id="mc_embed_signup">
                 <div id="mc_embed_signup_scroll">
                   <div class="form-group">
-                    <label for="mce-EMAIL">Your email:</label>
+                    <label for="mce-EMAIL">Your email</label>
                     <input type="email" value="" name="EMAIL" class="form-control" required id="mce-EMAIL" />
                   </div>
 
