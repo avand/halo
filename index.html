@@ -20,10 +20,13 @@
     <link rel="apple-touch-icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Hind:700|Lora:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="./confetti.min.js"></script>
 
     <style media="screen">
@@ -61,8 +64,8 @@
         height: auto;
       }
 
-      h1 { margin: .6em 0; font-weight: normal; font-size: 2em; }
-      h2, h3, h4, h5, h6 { margin: 0; font-size: 1em; font-weight: 700; }
+      h1 { margin: 2rem 0 1rem; font-weight: normal; font-size: 2rem; }
+      h2, h3, h4, h5, h6 { margin: 0; font-size: 1rem; font-weight: 700; }
 
       label {
         font-size: .8em;
@@ -101,7 +104,7 @@
 
       #join-mailing-list-button {
         font-size: 1.2em;
-        margin-top: 1em;
+        margin: 1rem 0;
       }
 
       #confetti {
@@ -111,6 +114,14 @@
         right: 0;
         left: 0;
         z-index: 1;
+      }
+
+      #social-media a {
+        margin: .5em;
+      }
+
+      #social-media a:hover {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -145,14 +156,21 @@
         <a href="http://naziragah.com/">Nazir Agah</a>.
       </p>
 
-      <p>
-        Follow our journey on
-        <a href="https://instagram.com/buildahalo" class="button">Instagram</a>.
-      </p>
-
       <button type="button" class="btn btn-primary" id="join-mailing-list-button" data-toggle="modal" data-target="#mailingListModal">
         Join Mailing List
       </button>
+
+      <p id="social-media">
+        <a href="https://instagram.com/buildahalo" aria-label="Follow on Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/buildahalo" aria-label="Like on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/buildahalo" aria-label="Follow on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </p>
     </div>
 
     <form action="https://buildahalo.us20.list-manage.com/subscribe/post?u=6b96938bbc82143eeb9cec283&amp;id=7fb8b5ecbf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
