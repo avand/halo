@@ -43,17 +43,37 @@
         body { font-size: 16px; }
       }
 
-      .content {
+      header {
         padding: 1.8em;
+        padding-bottom: 0;
         text-align: center;
-        max-width: 420px;
+        max-width: 700px;
         margin: 0 auto;
         position: relative;
         z-index: 2;
-
       }
-      .content p {
+
+      header p {
         text-shadow: 0 0 10px white;
+      }
+
+      #credit {
+        font-size: 0.875em;
+      }
+
+      #credit a {
+        white-space: nowrap;
+      }
+
+      article {
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: left;
+        padding: 1em 2em;
+        font-size: 1em;
+        max-width: 700px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
       }
 
       img.avatar {
@@ -144,14 +164,14 @@
       }).render();
     </script>
 
-    <div class="content">
+    <header>
       <img src="./halo.jpg" alt="Halo" width="164" height="164" class="avatar">
 
       <h1>
         How to Build a Halo
       </h1>
 
-      <p>
+      <p id="credit">
         A children’s book being written by
         <a href="http://avandamiri.com/" target="_blank">Avand Amiri</a>
         and illustrated by
@@ -173,7 +193,13 @@
           <i class="fab fa-twitter"></i>
         </a>
       </p>
-    </div>
+    </header>
+
+    <article>
+      <p>A halo—the phenomenon created as light refracts through an atmosphere to create a circular shape—is a sacred symbol in Hinduism, Buddhism, Islam, and Christianity. Dating back thousands of years, halos have been used in artwork to dignify saints, heroes, rulers, and spiritual leaders. A halo signifies a divine energy and an aura of enlightenment.</p>
+
+      <p>How to Build a Halo invites you to consider that the crown of a halo is self-adorned. This book is a manual for living a life filled with love and community. First, take care of yourself. Then take care of your friends and family. The rest is up to you. Fill your life with riches, the sciences, art, or whatever impossibilities you can imagine. Set your sights on the stars and never give up.</p>
+    </article>
 
     <form action="https://buildahalo.us20.list-manage.com/subscribe/post?u=6b96938bbc82143eeb9cec283&amp;id=7fb8b5ecbf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div class="modal fade" id="mailingListModal" tabindex="-1" role="dialog" aria-labelledby="mailingListModalLabel" aria-hidden="true">
